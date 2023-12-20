@@ -29,3 +29,32 @@ img {
 #nav .form-control {
   padding-left: 2.375rem;
 }
+
+#nav {
+  height: 56px;
+}
+
+.sidebar {
+  background-color: #051e34;
+  background-image: url("../img/sidebar-bg.png");
+  background-size: cover;
+  height: calc(100vh - 56px);
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 14px;
+}
+
+.sidebar-nav li {
+  list-style-type: none;
+  gap: 10px;
+}
+
+.sidebar-user {
+  gap: 10px;
+}
