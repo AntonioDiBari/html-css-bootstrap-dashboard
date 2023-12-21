@@ -62,7 +62,7 @@ img {
 
 #main {
   width: calc(100% - var(--sidebar-width));
-  /* height: calc(100vh - var(--nav-height)); */
+  height: calc(100vh - var(--nav-height));
   overflow: auto;
 }
 .main-header {
@@ -80,4 +80,12 @@ img {
 }
 .fa-angles-right {
   font-size: 10px;
+}
+
+.grafico {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.main-content {
+  font-size: 14px;
 }
