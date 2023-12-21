@@ -190,15 +190,16 @@
                   </button>
 
                   <div
-                    class="offcanvas offcanvas-end"
+                    class="offcanvas offcanvas-end w-lg-50"
                     tabindex="-1"
                     id="offcanvasRight"
                     aria-labelledby="offcanvasRightLabel"
                   >
                     <div class="offcanvas-header">
-                      <h5 class="offcanvas-title" id="offcanvasRightLabel">
-                        Offcanvas right
-                      </h5>
+                      <h6 class="offcanvas-title" id="offcanvasRightLabel">
+                        Inserisci un nuovo studente
+                      </h6>
+
                       <button
                         type="button"
                         class="btn-close"
@@ -206,7 +207,178 @@
                         aria-label="Close"
                       ></button>
                     </div>
-                    <div class="offcanvas-body">...</div>
+                    <div class="offcanvas-body container">
+                      <form
+                        action="https://learning.tizianonicolai.com/request-catcher/"
+                        method="GET"
+                        target="_blank"
+                        class="row g-2"
+                      >
+                        <div class="col-lg-6">
+                          <div class="card border-0">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input
+                              type="text"
+                              name="nome"
+                              id="nome"
+                              class="form-control"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="card border-0">
+                            <label for="cognome" class="form-label"
+                              >Cognome</label
+                            >
+                            <input
+                              type="text"
+                              name="cognome"
+                              id="cognome"
+                              class="form-control"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="card border-0">
+                            <label for="mail" class="form-label">Email</label>
+                            <div class="input-group">
+                              <div class="input-group-text">@</div>
+                              <input
+                                type="text"
+                                name="mail"
+                                id="mail"
+                                class="form-control"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="card border-0">
+                            <label for="psw" class="form-label">Password</label>
+                            <input
+                              type="password"
+                              name="psw"
+                              id="psw"
+                              class="form-control"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="card border-0">
+                            <label for="mail2" class="form-label"
+                              >Indirizzo Email</label
+                            >
+                            <div class="input-group">
+                              <div class="input-group-text">@</div>
+                              <input
+                                type="text"
+                                name="mail2"
+                                id="mail2"
+                                class="form-control"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="card border-0">
+                            <label for="psw2" class="form-label"
+                              >Password</label
+                            >
+                            <input
+                              type="password"
+                              name="psw2"
+                              id="psw2"
+                              class="form-control"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="card border-0">
+                            <label for="indirizzo" class="form-label"
+                              >Indirizzo</label
+                            >
+                            <input
+                              type="text"
+                              name="indirizzo"
+                              id="indirizzo"
+                              class="form-control"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="card border-0">
+                            <label for="citta" class="form-label"
+                              >Citt&agrave;</label
+                            >
+                            <input
+                              type="text"
+                              name="citta"
+                              id="citta"
+                              class="form-control"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="card border-0">
+                            <label for="stato" class="form-label">Stato</label>
+                            <select name="stato" id="stato" class="form-select">
+                              <option value="IT">Italia</option>
+                              <option value="EU">Europa</option>
+                              <option value="AS">Asia</option>
+                              <option value="AF">Africa</option>
+                              <option value="AM">Americhe</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-lg-2">
+                          <div class="card border-0">
+                            <label for="cap" class="form-label">CAP</label>
+                            <input
+                              type="text"
+                              name="cap"
+                              id="cap"
+                              class="form-control"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="card border-0">
+                            <div class="mb-3">
+                              <label for="formFile" class="form-label"
+                                >Foto</label
+                              >
+                              <input
+                                class="form-control"
+                                type="file"
+                                id="formFile"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 d-flex gap-2">
+                          <input
+                            type="checkbox"
+                            name="required"
+                            id="required"
+                            class="form-check-input"
+                            required
+                          />
+                          <label for="required">Seleziona per proseguire</label>
+                        </div>
+                        <div class="col-12 d-flex gap-2">
+                          <input
+                            type="submit"
+                            value="Salva"
+                            class="btn btn-primary"
+                          />
+                          <input
+                            type="reset"
+                            value="Svuota"
+                            class="btn btn-warning"
+                          />
+                        </div>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>

@@ -10,10 +10,6 @@
   .sidebar-user div {
     width: 25px;
   }
-  /* .col_2,
-  .col_3 {
-    display: table-cell;
-  } */
 }
 
 @media screen and (max-width: 480px) {
