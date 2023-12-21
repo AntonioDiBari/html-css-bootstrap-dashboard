@@ -89,3 +89,16 @@ img {
 .main-content {
   font-size: 14px;
 }
+.logo-small span {
+  background-color: #f26551;
+  border-radius: 50%;
+  height: 30px;
+  aspect-ratio: 1;
+  color: white;
+}
+.logo-small button i {
+  font-size: 15px;
+}
+.status-btn {
+  font-size: 10px;
+}

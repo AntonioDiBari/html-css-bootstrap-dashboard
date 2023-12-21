@@ -137,7 +137,9 @@
                     Piano blaze
                   </button>
                 </div>
-                <div class="col_subtitle d-flex align-items-center gap-2">
+                <div
+                  class="col_subtitle d-flex align-items-center gap-2 flex-wrap"
+                >
                   <button
                     type="button"
                     class="rounded btn btn-primary btn_bg-blu rounded-pill py-0 h-100"
@@ -215,13 +217,63 @@
           class="main-content flex-grow-1 bg-body-secondary container-fluid py-3"
         >
           <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-8">
               <div class="card mb-3">
                 <div class="card-header">
                   <span class="fw-semibold fs-5">Prossime classi</span>
                 </div>
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Table</li>
+                  <li class="list-group-item">
+                    <table class="table table-hover text-center">
+                      <thead>
+                        <tr>
+                          <th class="text-start col-6">Nome</th>
+                          <th class="col-2" scope="col_2">Data Inizio</th>
+                          <th class="col-1" scope="col_3">ROI</th>
+                          <th class="col-1">Stato</th>
+                          <th class="col-2">Azioni</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="">
+                          <td class="text-start">
+                            <div class="logo-small d-inline-block">
+                              <span
+                                class="d-flex align-items-center justify-content-center d-inline me-2"
+                              >
+                                <i class="fa-solid fa-code"></i>
+                              </span>
+                            </div>
+                            Classe 75
+                          </td>
+                          <td>15 Feb 2021</td>
+                          <td>20%</td>
+                          <td>
+                            <button
+                              type="button"
+                              class="status-btn btn btn-success py-0 px-1"
+                            >
+                              Done
+                            </button>
+                          </td>
+                          <td class="logo-small">
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="fa-solid fa-pencil"></i>
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-secondary"
+                            >
+                              <i class="fa-solid fa-trash"></i>
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </li>
                 </ul>
               </div>
               <div class="card mb-3">
@@ -304,7 +356,7 @@
                 </ul>
               </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-4">
               <div class="card mb-3">
                 <div class="card-header">
                   <span class="fw-semibold fs-5">Todo</span>
