@@ -5,6 +5,8 @@ img {
 /* PALETTE */
 
 :root {
+  --nav-height: 56px;
+  --sidebar-width: 70px;
 }
 
 /* HEADER */
@@ -31,23 +33,22 @@ img {
 }
 
 #nav {
-  height: 56px;
+  height: var(--nav-height);
 }
 
 .sidebar {
   background-color: #051e34;
   background-image: url("../img/sidebar-bg.png");
   background-size: cover;
-  height: calc(100vh - 56px);
-  width: 70px;
+  height: calc(100vh - var(--nav-height));
+  width: var(--sidebar-width);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  color: white;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  font-size: 14px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 15px;
 }
 
 .sidebar-nav li {
@@ -57,4 +58,18 @@ img {
 
 .sidebar-user {
   gap: 10px;
+}
+
+#main {
+  width: calc(100% - var(--sidebar-width));
+  height: calc(100vh - var(--nav-height));
+  overflow: auto;
+}
+.main-header {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 14px;
+}
+.main-header .col-3 button {
+  padding-top: 4px;
 }
