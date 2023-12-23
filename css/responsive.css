@@ -2,13 +2,20 @@
 /* MOBILE FIRST  */
 /* **************************** */
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   :root {
-    --sidebar-width: 150px;
+    --sidebar-width: 70px;
   }
   .sidebar-nav li div,
   .sidebar-user div {
-    width: 25px;
+    width: 100%;
+  }
+  .sidebar-nav li,
+  .sidebar-user {
+    padding-right: 0px;
+  }
+  .offcanvas.offcanvas-end {
+    width: 100%;
   }
 }
 

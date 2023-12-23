@@ -6,7 +6,7 @@ img {
 
 :root {
   --nav-height: 56px;
-  --sidebar-width: 70px;
+  --sidebar-width: 150px;
 }
 
 /* HEADER */
@@ -35,7 +35,7 @@ img {
 #nav {
   height: var(--nav-height);
 }
-
+/* SIDEBAR */
 .sidebar {
   background-color: #051e34;
   background-image: url("../img/sidebar-bg.png");
@@ -54,12 +54,22 @@ img {
 .sidebar-nav li {
   list-style-type: none;
   gap: 10px;
+  padding-right: 15px;
 }
-
+.sidebar-nav li div,
+.sidebar-user div {
+  width: 25px;
+}
 .sidebar-user {
   gap: 10px;
+  padding-right: 15px;
 }
 
+.sidebar-nav ul a li:hover,
+.sidebar-user:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+/* MAIN */
 #main {
   width: calc(100% - var(--sidebar-width));
   height: calc(100vh - var(--nav-height));
@@ -101,4 +111,8 @@ img {
 }
 .status-btn {
   font-size: 10px;
+}
+/* FORM NUOVO STUDENTE */
+.offcanvas.offcanvas-end {
+  width: 50%;
 }
